@@ -1,8 +1,10 @@
 {
   "name": "emiya",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "",
   "main": "index.js",
+  "homepage": "https://zjhch123.github.io/Emiya/",
+  "repository": "https://github.com/zjhch123/Emiya",
   "scripts": {
     "emiya": "node bin/Emiya"
   },
