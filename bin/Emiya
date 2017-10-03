@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+const commander = require('commander');
+const util = require('../lib/util');
+
+commander
+  .version(require('../package').version);
+
+commander
+  .description('init a project')
+  .action((opts) => util.init(opts));
+
+
+commander.parse(process.argv);
+
+if (!process.argv.slice(2).length) {
+  commander.outputHelp();
+}

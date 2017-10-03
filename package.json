@@ -1,0 +1,22 @@
+{
+  "name": "emiya",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "emiya": "node bin/Emiya"
+  },
+  "bin": {
+    "emiya": "bin/emiya"
+  },
+  "keywords": ["emiya", "webpack", "launcher"],
+  "author": "zjhch123<zjhch123@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "commander": "^2.11.0",
+    "figlet": "^1.2.0",
+    "fs-extra": "^4.0.2",
+    "path": "^0.12.7"
+  }
+}
