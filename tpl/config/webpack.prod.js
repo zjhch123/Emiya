@@ -10,6 +10,7 @@ config.module.rules.push({
   use: ExtractTextPlugin.extract({
     use: [
       'css-loader',
+      'postcss-loader',
       'sass-loader'
     ],
     fallback: 'style-loader'
@@ -20,6 +21,7 @@ config.module.rules.push({
   use: ExtractTextPlugin.extract({
     use: [
       'css-loader',
+      'postcss-loader'
     ],
     fallback: 'style-loader'
   }),

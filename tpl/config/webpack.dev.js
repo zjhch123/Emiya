@@ -2,6 +2,7 @@ const webpack = require('webpack');
 const paths = require('./paths');
 const config = require('./webpack.base.js');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 
 config.devServer = {
   historyApiFallback: true,
@@ -18,6 +19,7 @@ config.module.rules.push({
   use: [
     'style-loader',
     'css-loader',
+    'postcss-loader',
     'sass-loader'
   ],
   exclude: /node_modules/
@@ -26,8 +28,17 @@ config.module.rules.push({
   use: [
     'style-loader',
     'css-loader',
+    'postcss-loader'
   ],
   exclude: /node_modules/
+},{
+  test: /.jsx?$/,
+  loader: 'eslint-loader',
+  enforce: 'pre',
+  include: [paths.appSrc],
+  options: {
+    formatter: require('eslint-friendly-formatter')
+  }
 });
 
 config.plugins.push(
@@ -39,7 +50,8 @@ config.plugins.push(
   new HtmlWebpackPlugin({
     inject: true,
     template: paths.appIndexHTML,
-  })
+  }),
+  new FriendlyErrorsPlugin()
 );
 
 module.exports = config;

@@ -37,6 +37,7 @@ npm run build
  - 1.0.0 - 创建项目
  - 1.0.1 - 更新`README.md`
  - 1.0.2 - 更新`package.json`
+ - 1.1.0 - 增加`eslint`, 增加`postcss-loader`
 
 ## Emiya
 英灵卫宫[Emiya], TYPE-MOON的游戏作品及相关动画《Fate》系列中的人物, 第五次圣杯战争时由远坂凛召唤出的Servant, 职阶是Archer。
