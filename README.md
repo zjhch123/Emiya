@@ -1,5 +1,5 @@
 # Emiya 
-`Emiya` 精简, 小巧的、基于webpack的SPA项目脚手架
+精简, 小巧的、基于webpack的SPA项目脚手架
 
 ## 0. Emiya是什么?
 一个用于创建基于webpack的SPA项目的脚手架工具。
@@ -18,7 +18,11 @@ cnpm i emiya -g / npm i emiya -g
 ### 2. 使用
 1. 创建工程
 ```
-emiya my-project
+emiya my-project 
+```
+1.5. 进入工程
+```
+cd my-project
 ```
 2. 安装依赖
 ```
