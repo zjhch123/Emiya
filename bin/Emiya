@@ -3,16 +3,24 @@
 const commander = require('commander');
 const util = require('../lib/util');
 
-commander
-  .version(require('../package').version);
 
 commander
   .description('init a project')
-  .action((opts) => util.init(opts));
+  .version(require('../package').version)
+  .option('-n, --node <projectName>', 'Create Node Project')
+  .option('-w, --web <projectName>', 'Create Webapp Project')
+  .parse(process.argv)
+  
+if (commander.node) {
+  // 如果是Node的话
+  
+  const projectName = commander.node
+  util.initNode(projectName, 1)
+} else if (commander.web) {
+  // 如果是web的话
 
-
-commander.parse(process.argv);
-
-if (!process.argv.slice(2).length) {
-  commander.outputHelp();
+  const projectName = commander.web
+  util.initWeb(projectName, 0)
+} else {
+  commander.outputHelp()
 }
