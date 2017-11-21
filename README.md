@@ -1,8 +1,8 @@
 # Emiya 
-精简, 小巧的、基于webpack的SPA项目脚手架
+精简, 小巧的、用于构建js应用程序的脚手架工具。
 
 ## 0. Emiya是什么?
-一个用于创建基于webpack的SPA项目的脚手架工具。
+一个用于创建js项目的脚手架工具。
 
 ## 1. Emiya使用说明
 ### 1. 安装
@@ -15,26 +15,55 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm i emiya -g / npm i emiya -g
 ```
 
-### 2. 使用
+### 2. 使用 - web app
+0. 简介
+
+[emiya-spa-template](https://github.com/zjhch123/emiya-spa-template)
 1. 创建工程
 ```
-emiya my-project 
+emiya -w my-project 
 ```
-1.5. 进入工程
+2. 进入工程
 ```
 cd my-project
 ```
-2. 安装依赖
+3. 安装依赖
 ```
 npm i
 ```
-3. 调试
+4. 调试 & 开发
 ```
 npm run dev
 ```
-4. 打包
+5. 打包
 ```
 npm run build
+```
+
+### 2.5. 使用 - node app
+0. 简介
+
+[emiya-node-template](https://github.com/zjhch123/emiya-node-template`)
+
+1. 创建工程
+```
+emiya -n my-project 
+```
+2. 进入工程
+```
+cd my-project
+```
+3. 安装依赖
+```
+npm i
+```
+4. 调试 & 开发
+```
+npm run dev
+```
+5. 运行
+```
+npm run start
 ```
 
 ## * 更新日志
@@ -42,6 +71,7 @@ npm run build
  - 1.0.1 - 更新`README.md`
  - 1.0.2 - 更新`package.json`
  - 1.1.0 - 增加`eslint`, 增加`postcss-loader`
+ - 1.2.1 - 增加`node`脚手架模板
 
 ## Emiya
 英灵卫宫[Emiya], TYPE-MOON的游戏作品及相关动画《Fate》系列中的人物, 第五次圣杯战争时由远坂凛召唤出的Servant, 职阶是Archer。
