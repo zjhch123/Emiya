@@ -16,52 +16,52 @@ cnpm i emiya -g / npm i emiya -g
 ```
 
 ### 2. 使用 - web app
-0. 简介
+1. 简介
 
 [emiya-spa-template](https://github.com/zjhch123/emiya-spa-template)
-1. 创建工程
+2. 创建工程
 ```
 emiya -w my-project 
 ```
-2. 进入工程
+3. 进入工程
 ```
 cd my-project
 ```
-3. 安装依赖
+4. 安装依赖
 ```
 npm i
 ```
-4. 调试 & 开发
+5. 调试 & 开发
 ```
 npm run dev
 ```
-5. 打包
+6. 打包
 ```
 npm run build
 ```
 
 ### 2.5. 使用 - node app
-0. 简介
+1. 简介
 
 [emiya-node-template](https://github.com/zjhch123/emiya-node-template`)
 
-1. 创建工程
+2. 创建工程
 ```
 emiya -n my-project 
 ```
-2. 进入工程
+3. 进入工程
 ```
 cd my-project
 ```
-3. 安装依赖
+4. 安装依赖
 ```
 npm i
 ```
-4. 调试 & 开发
+5. 调试 & 开发
 ```
 npm run dev
 ```
-5. 运行
+6. 运行
 ```
 npm run start
 ```
