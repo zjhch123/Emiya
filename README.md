@@ -19,6 +19,7 @@ cnpm i emiya -g / npm i emiya -g
 1. 简介
 
 [emiya-spa-template](https://github.com/zjhch123/emiya-spa-template)
+
 2. 创建工程
 ```
 emiya -w my-project 
