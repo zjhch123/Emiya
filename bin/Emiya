@@ -22,5 +22,7 @@ if (commander.node) {
   const projectName = commander.web
   util.initWeb(projectName, 0)
 } else {
+  // 参数有问题
+  
   commander.outputHelp()
 }
