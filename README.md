@@ -44,7 +44,7 @@ npm run build
 ### 2.5. 使用 - node app
 1. 简介
 
-[emiya-node-template](https://github.com/zjhch123/emiya-node-template`)
+[emiya-node-template](https://github.com/zjhch123/emiya-node-template)
 
 2. 创建工程
 ```
@@ -70,7 +70,7 @@ npm run start
 ### 2.7 使用 - vue app
 1. 简介
 
-[emiya-node-template](https://github.com/zjhch123/emiya-vue-template`)
+[emiya-node-template](https://github.com/zjhch123/emiya-vue-template)
 
 2. 创建工程
 ```
