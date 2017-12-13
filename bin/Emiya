@@ -9,18 +9,24 @@ commander
   .version(require('../package').version)
   .option('-n, --node <projectName>', 'Create Node Project')
   .option('-w, --web <projectName>', 'Create Webapp Project')
+  .option('-v, --vue <projectName>', 'Create Webapp(Vue) Project')
   .parse(process.argv)
   
 if (commander.node) {
   // 如果是Node的话
   
   const projectName = commander.node
-  util.initNode(projectName, 1)
+  util.initNode(projectName)
 } else if (commander.web) {
   // 如果是web的话
 
   const projectName = commander.web
-  util.initWeb(projectName, 0)
+  util.initWeb(projectName)
+} else if (commander.vue) {
+  // 如果是Vue的话
+
+  const projectName = commander.vue
+  util.initVue(projectName)
 } else {
   // 参数有问题
   
