@@ -70,7 +70,7 @@ npm run start
 ### 2.7 使用 - vue app
 1. 简介
 
-[emiya-node-template](https://github.com/zjhch123/emiya-vue-template)
+[emiya-vue-template](https://github.com/zjhch123/emiya-vue-template)
 
 2. 创建工程
 ```
