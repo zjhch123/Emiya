@@ -8,7 +8,8 @@ commander
   .description('init a project')
   .version(require('../package').version)
   .option('-n, --node <projectName>', 'Create Node Project')
-  .option('-w, --web <projectName>', 'Create Webapp Project')
+  .option('-w, --web <projectName>', 'Create Web Single Page Project')
+  .option('-m, --multiple <projectName>', 'Create Web Multiple Page Project')
   .option('-v, --vue <projectName>', 'Create Webapp(Vue) Project')
   .parse(process.argv)
   
@@ -27,7 +28,12 @@ if (commander.node) {
 
   const projectName = commander.vue
   util.initVue(projectName)
-} else {
+} else if (commander.multiple) {
+  // 如果是multiple page的话
+
+  const projectName = commander.multiple
+  util.initMultiple(projectName)
+}else {
   // 参数有问题
   
   commander.outputHelp()
