@@ -1,6 +1,6 @@
 {
   "name": "emiya",
-  "version": "1.4.0",
+  "version": "1.5.0",
   "description": "",
   "main": "index.js",
   "homepage": "https://zjhch123.github.io/Emiya/",
@@ -19,7 +19,6 @@
   "author": "zjhch123<zjhch123@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "colors": "^1.1.2",
     "commander": "^2.11.0",
     "download-git-repo": "^1.0.1",
     "figlet": "^1.2.0",

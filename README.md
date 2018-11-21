@@ -6,13 +6,13 @@
 
 ## 1. Emiya使用说明
 ### 1. 安装
-1. 切换淘宝镜像(不推荐)
+1. 切换淘宝镜像(推荐)
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 ```
 2. 安装Emiya
 ```
-cnpm i emiya -g / npm i emiya -g
+cnpm i emiya -g // or npm i emiya -g
 ```
 
 ### 2. 使用 - web app
@@ -119,6 +119,35 @@ npm run dev
 npm run build
 ```
 
+### 3.0. 使用 - Component Starter
+1. 简介
+
+[emiya-pkg-template](https://github.com/zjhch123/emiya-pkg-template)
+
+2. 创建工程
+```
+emiya -p Dialog
+```
+3. 进入工程
+```
+cd Dialog
+```
+4. 安装依赖
+```
+npm i
+```
+5. 创建一个Component
+```
+npm run create // 依据选项创建
+```
+6. 开发
+```
+npm run dev
+```
+7. 打包
+```
+npm run build
+```
 
 ## * 更新日志
  - 1.0.0 - 创建项目

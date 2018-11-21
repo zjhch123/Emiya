@@ -11,6 +11,7 @@ commander
   .option('-w, --web <projectName>', 'Create Web Single Page Project')
   .option('-m, --multiple <projectName>', 'Create Web Multiple Page Project')
   .option('-v, --vue <projectName>', 'Create Webapp(Vue) Project')
+  .option('-p, --pkg <projectName>', 'Create Component Starter')
   .parse(process.argv)
   
 if (commander.node) {
@@ -33,7 +34,12 @@ if (commander.node) {
 
   const projectName = commander.multiple
   util.initMultiple(projectName)
-}else {
+} else if (commander.pkg) {
+  // 如果是pkg的话
+
+  const projectName = commander.pkg
+  util.initPkg(projectName)
+} else {
   // 参数有问题
   
   commander.outputHelp()
