@@ -12,6 +12,7 @@ commander
   .option('-m, --multiple <projectName>', 'Create Web Multiple Page Project')
   .option('-v, --vue <projectName>', 'Create Webapp(Vue) Project')
   .option('-p, --pkg <projectName>', 'Create Component Starter')
+  .option('-t, --test <projectName>', 'Create UI-Test Starter')
   .parse(process.argv)
   
 if (commander.node) {
@@ -39,6 +40,11 @@ if (commander.node) {
 
   const projectName = commander.pkg
   util.initPkg(projectName)
+} else if (commander.test) {
+  // 如果是test的话
+  
+  const projectName = commander.test
+  util.initTest(projectName)
 } else {
   // 参数有问题
   

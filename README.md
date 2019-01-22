@@ -149,6 +149,33 @@ npm run dev
 npm run build
 ```
 
+### 4.0. 使用 - UI Test Starter
+1. 简介
+
+[emiya-test-template](https://github.com/zjhch123/emiya-test-template)
+
+2. 创建工程
+```
+emiya -t UITest
+```
+3. 进入工程
+```
+cd UITest
+```
+4. 安装依赖
+```
+sh launch.sh
+```
+5. 录制一个Test Case
+```
+npm run record // 依据选项创建
+```
+6. 回放Test Case
+```
+npm run replay
+```
+
+
 ## * 更新日志
  - 1.0.0 - 创建项目
  - 1.0.1 - 更新`README.md`
@@ -159,6 +186,7 @@ npm run build
  - 1.4.0 - 增加`multiple page`模板
  - 1.5.0 - 增加`Package(Component) starter`模板
  - 1.5.1 - bug fixed (output error)
+ - 1.6.0 - 增加`UI Test`模板
 
 ## Emiya
 英灵卫宫[Emiya], TYPE-MOON的游戏作品及相关动画《Fate》系列中的人物, 第五次圣杯战争时由远坂凛召唤出的Servant, 职阶是Archer。
